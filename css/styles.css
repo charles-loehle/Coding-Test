@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,300;0,700;0,900;1,900&family=Oswald:wght@700&display=swap');
+@import './media-queries.css';
+
+:root {
+	/* COLORS */
+	--off-white: #fefeff;
+	--primary: #414f6b;
+	--secondary: #414f6be0;
+	--light: #657691;
+	--extra-light: #b0b4be;
+	--dark: #000000;
+
+	/* FONTS */
+	--font-primary: 'Bebas Neue', sans-serif;
+	/* big numbers and small headings = Oswald bold */
+	--font-secondary: 'Oswald', sans-serif;
+	--font-tertiary: 'Lato', sans-serif;
+}
+
+/* so padding doesn't affect element widths */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-primary);
+}
+
+p {
+	font-family: var(--font-tertiary);
+}
+
+.container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+}
+
+.flex {
+	display: flex;
+}
+
+.ai-center {
+	align-items: center;
+}
+
+.jc-center {
+	justify-content: center;
+}
+
+.jc-space-between {
+	justify-content: space-between;
+}
+
+header.site-navigation {
+	z-index: 100;
+	position: relative;
+}
+
+header.site-navigation .logo {
+	align-self: center;
+}
+
+header.site-navigation ul.main__menu li:first-of-type,
+.history-nav li:first-of-type {
+	padding-right: 50px;
+}
+
+header.site-navigation li,
+.history-nav li {
+	list-style-type: none;
+	text-align: right;
+}
+
+header a.main__menu--link {
+	color: var(--off-white);
+	font-family: var(--font-tertiary);
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-underline-offset: 5px;
+}
+
+.hero {
+	position: relative;
+	background-image: url('../images/hero/hero-with-heading.webp');
+	min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: -84px;
+}
+
+.hero h1 {
+	position: relative;
+	font-size: 9rem;
+	line-height: 0.9;
+	text-align: center;
+	margin: 0;
+}
+
+.hero h1 .title-blue {
+	color: blue;
+}
+
+/* HISTORY SECTION */
+.history-nav .logo a {
+	display: flex;
+}
+
+.history-nav .main__menu {
+	margin: 0;
+}
+
+.history-nav .main__menu--link {
+	color: var(--primary);
+	font-family: var(--font-tertiary);
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-underline-offset: 5px;
+}
+
+.history {
+	position: relative;
+	background-image: url('../images/history/history-section-mountains.webp'),
+		url('../images/history/01-history.png');
+	min-height: 100vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.history a.main__menu--link {
+	color: var(--primary);
+}
+
+.heading-2 {
+	font-family: var(--font-secondary);
+	text-transform: uppercase;
+	font-size: 32px;
+	color: var(--primary);
+	font-weight: 700;
+}
+
+.text .large-number {
+	font-family: var(--font-secondary);
+	text-transform: uppercase;
+}
+
+.text .large-number {
+	font-size: 126px;
+	color: var(--light);
+	font-weight: bold;
+	margin: 0;
+}
+
+.text .small-title {
+	margin-bottom: 0px;
+	align-self: center;
+	margin-left: -25px;
+}
+
+.history__text-content {
+	margin: -0.6rem 4rem;
+	line-height: 2rem;
+}
+
+/* CLIMB SECTION */
+.climb-schedule {
+	position: relative;
+	background-image: url('../images/climb/Tab-2-mountain-with-blue-sky.webp');
+	min-height: 89vh;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.climb .text {
+	margin-left: 22px;
+}
+
+.climb .text .large-number {
+	color: var(--extra-light);
+}
+
+.climb__text-content {
+	align-self: center;
+	margin: 0 0 1.5rem 2rem;
+	line-height: 2rem;
+}
+
+.climbTabs {
+	background-color: var(--primary);
+}
+
+.climbTabs__container {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: start;
+}
+
+.climb-schedule__scheduleBox {
+	max-width: 352px;
+	background-color: rgb(240 242 245 / 70%);
+	padding: 1rem 2.4rem;
+	margin: 6.25rem 0 0 1.9375rem;
+}
+
+.climb-schedule__scheduleBox h2 {
+	margin: 0 0 0.55rem;
+}
+
+.climb-schedule__text {
+	justify-content: space-between;
+}
+
+/* .climb-schedule__text p {
+	margin-right: 0.5rem;
+} */
+
+.climb-schedule__table {
+	width: 100%;
+}
+
+.climb-schedule__table th,
+.climb-schedule__table td {
+	font-family: var(--font-tertiary);
+	font-weight: 400;
+	text-align: left;
+}
+
+.climb-schedule__table th {
+	padding: 0rem 1rem 0.25rem 0;
+}
+
+.climb-schedule__table td {
+	text-align: right;
+	padding: 0rem 0rem 0.25rem 0;
+}
+
+/* FOOTER */
+footer {
+	background-color: var(--primary);
+}
+
+footer .copyright p {
+	font-family: var(--font-tertiary);
+	text-align: center;
+	text-transform: uppercase;
+	font-style: italic;
+	letter-spacing: 1.6px;
+	color: var(--light);
+	font-weight: 900;
+	margin-left: 2rem;
+}

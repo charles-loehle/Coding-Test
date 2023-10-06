@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CT Skill Test</title>
+		<link rel="stylesheet" href="./css/normalize.css" />
+		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/buttons.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+		/>
+		<link rel="stylesheet" href="./css/carousel.css" />
+	</head>
+	<body>
+		<header class="site-navigation">
+			<div class="container flex jc-space-between">
+				<div class="logo">
+					<a href="#">
+						<img src="./images/Logo.png" alt="Coalition Technologies Logo" />
+					</a>
+				</div>
+				<nav class="flex">
+					<ul class="main__menu flex">
+						<li class="main__menu--listitem">
+							<a class="main__menu--link" href="#history-nav">01. History</a>
+						</li>
+						<li class="main__menu--listitem">
+							<a class="main__menu--link" href="#climb-section">02. Team</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="site-main">
+			<div class="hero"></div>
+			<div
+				id="history-nav"
+				class="history-nav container flex jc-space-between ai-center"
+			>
+				<div class="logo">
+					<a href="#">
+						<img
+							src="./images/history/history-section-logo-with-text.png"
+							alt="Logo with text"
+						/>
+					</a>
+				</div>
+				<nav class="flex">
+					<ul class="main__menu flex">
+						<li class="main__menu--listitem">
+							<a class="main__menu--link" href="#history-nav">01. History</a>
+						</li>
+						<li class="main__menu--listitem">
+							<a class="main__menu--link" href="#climb-section">02. Team</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<section class="history">
+				<div class="container">
+					<div class="text flex">
+						<p class="large-number">01.</p>
+						<h2 class="heading-2 small-title">History</h2>
+					</div>
+					<p class="history__text-content">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim,
+						illum ab harum nulla quidem assumenda voluptatem nobis laborum eos
+						porro. Reprehenderit, iusto. Fugit laboriosam facilis molestiae
+						saepe animi velit in?
+					</p>
+				</div>
+			</section>
+
+			<div class="history-carousel">
+				<div class="container swiper mySwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img
+								src="./images/history/carousel/man-standing-on-mountain-top.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/history/carousel/misty-mountains.jpg" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="./images/history/carousel/man-standing-on-mountain-top.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/history/carousel/misty-mountains.jpg" alt="" />
+						</div>
+						<div class="swiper-slide">
+							<img
+								src="./images/history/carousel/man-standing-on-mountain-top.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="swiper-slide">
+							<img src="./images/history/carousel/misty-mountains.jpg" alt="" />
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+
+			<section id="climb-section" class="climb">
+				<div class="climb__text container flex">
+					<div class="text flex">
+						<p class="large-number">02.</p>
+						<h2 class="heading-2 small-title">Climb</h2>
+					</div>
+					<p class="climb__text-content">
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim,
+						illum ab harum nulla quidem assumenda voluptatem nobis laborum eos
+						porro. Reprehenderit, iusto. Fugit laboriosam facilis molestiae
+						saepe animi velit in?
+					</p>
+				</div>
+
+				<div class="climbTabs">
+					<div class="climbTabs__container flex">
+						<button class="climbTabs__button1 btn btn-primary active">
+							Mountain 1
+						</button>
+						<button class="btn climbTabs__button2 btn-primary">
+							Mountain 2
+						</button>
+					</div>
+				</div>
+
+				<div class="climb-schedule">
+					<div class="container">
+						<div class="climb-schedule__scheduleBox">
+							<h2 class="heading-2">Schedule</h2>
+							<div class="climb-schedule__text">
+								<table class="table climb-schedule__table">
+									<tbody>
+										<tr>
+											<th scope="row">25 Nov 2016</th>
+											<td>Vestibulum viverra</td>
+										</tr>
+										<tr>
+											<th scope="row">25 Nov 2016</th>
+											<td>Vestibulum viverra</td>
+										</tr>
+										<tr>
+											<th scope="row">25 Nov 2016</th>
+											<td>Vestibulum viverra</td>
+										</tr>
+										<tr>
+											<th scope="row">25 Nov 2016</th>
+											<td>Vestibulum viverra</td>
+										</tr>
+										<tr>
+											<th scope="row">25 Nov 2016</th>
+											<td>Vestibulum viverra</td>
+										</tr>
+										<tr>
+											<th scope="row">25 Nov 2016</th>
+											<td>Vestibulum viverra</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="container">
+				<div class="flex jc-space-between ai-center">
+					<div class="logo">
+						<a href="#">
+							<img
+								src="./images/Logo-blue.png"
+								alt="Coalition Technologies Logo"
+							/>
+						</a>
+					</div>
+					<div class="copyright">
+						<p>Copyright 2016. All rights reserved</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+		<script src="./js/carousel.js"></script>
+		<script src="./js/tabs.js
+		"></script>
+	</body>
+</html>

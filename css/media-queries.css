@@ -1,0 +1,74 @@
+/* MOBILE */
+@media screen and (max-width: 450px) {
+	div.hero {
+		background-image: url('../images/hero/hero-with-heading-mobile.webp');
+	}
+
+	.history-nav ul.main__menu {
+		margin-top: 1rem;
+		padding: 0;
+	}
+
+	.history-nav.container {
+		flex-direction: column;
+	}
+
+	.history {
+		min-height: 108vh;
+		background-position: right;
+	}
+
+	.history .history__text-content {
+		margin: 0;
+		line-height: 1.5rem;
+	}
+
+	.climb .climb-schedule {
+		min-height: 70vh;
+	}
+
+	.climb-schedule .container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.climb-schedule__scheduleBox {
+		flex: 1;
+	}
+
+	footer .flex {
+		flex-direction: column;
+	}
+
+	footer .flex .copyright p {
+		margin: 1rem 0 0 0;
+	}
+}
+
+@media screen and (max-width: 378px) {
+	div.hero {
+		margin-top: -107px;
+	}
+}
+
+/* TABLET */
+@media screen and (max-width: 850px) {
+	div.hero {
+		background-position: top;
+	}
+
+	.history .history__text-content {
+		margin: 0;
+	}
+	.climb .climb__text {
+		flex-direction: column;
+	}
+
+	.climb .climb__text-content {
+		margin: 0;
+	}
+
+	.climb-schedule .climb-schedule__scheduleBox {
+		margin: 0;
+	}
+}
